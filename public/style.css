@@ -1,0 +1,54 @@
+
+body {
+  margin: auto;
+  text-align: center;
+  background: #EEE;
+  margin: 16px;
+  font-family: sans-serif;
+}
+
+.pokemon, #buscar {
+  text-align: center;
+  background: white;
+  border-radius: 4px;
+  margin: 16px;
+  box-shadow: 0 2px 4px #0002;
+  border: solid 1px #0002;
+  display: inline-block;
+  transition: 250ms;
+}
+
+.pokemon:hover, #buscar:focus {
+  box-shadow: 0 4px 16px #0003;
+  transform: translateY(-8px);
+}
+
+#buscar {
+  padding: 4px;
+  outline: none;
+  font-size: 16px;
+}
+
+.pokemon {
+  padding: 16px;
+  cursor: pointer;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+}
+
+.pokemon img {
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.pokemon div {
+  width: 128px;
+  height: 128px;
+}
+
+.pokemon span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 16px;
+}

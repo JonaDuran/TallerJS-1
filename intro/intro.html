@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <script>
+    // Comentario de una línea
+    /* 
+    bloque */
+    
+    /* VARIABLES */
+    
+    // no recomendadas
+    uno = 1;
+    var dos = 2;
+    var tres;
+    tres = 3;
+    
+    // recomendada
+    let editable;
+    editable = 20;
+    const constante = 4;
+    
+    /* TIPOS DE DATOS */
+    
+    // números
+    const anio = 2018;
+    const suma = 2 + 4;
+    const numero = Number('123');
+    
+    // Cadenas
+    const saludo = 'Hola';
+    const js = "JavaScript";
+    const concatenar = saludo + ' ' + js;
+    // const plantilla = `Introducción a ${js}`; // ES6
+    
+    // Boleanos
+    const verdadero = true;
+    const falso = false;
+    const igual = 10 === '10';
+    const diferente = 10 !== '10';
+    
+    // Arreglos 
+    const numeros = [1, 2, 3, '4', true, []];
+    numeros.push(5);
+    
+    // Objetos
+    const taller = {
+      nombre: js,
+      carrera: 'Ing. Informática',
+      fecha: {
+        dia: 22,
+        mes: 'Mayo',
+        anio,
+      }
+    };
+    const taller2 = taller;
+    taller2.nombre = 'Otro nombre';
+    
+    // Funciones
+    function sumar(n1, n2) {
+      return n1 + n2;
+    }
+    
+    const restar = function(n1, n2) {
+      return n1 - n2;
+    };
+    
+    const multiplicar = (n1, n2) => {
+      return n1 * n2;
+    };
+    
+    const dividir = (n1, n2) => n1 / n2;
+    
+    const alCuadrado = n => n * n;
+  </script>
+  
+  <script src="myScript.js"></script>
+  
+</head>
+<body>
+  <h1 onclick="tituloClick()">
+    Introducción a JavaScript
+  </h1>
+  
+  <form>
+    <input class="numero"/>
+    +
+    <input class="numero"/>
+    <button> = </button>
+    <span id="resultado"></span>
+  </form>
+  
+  <br/>
+  <div id="raton"></div>
+  
+</body>
+</html>
